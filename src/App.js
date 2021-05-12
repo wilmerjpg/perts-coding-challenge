@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Toogle from './components/Toggle';
 
-function App() {
+const App = () => {
+  const [isChecked, setIsChecked] = useState(false);
+
+  /**
+   * Function to change toggle value
+   * @param value
+   */
+  const handleChange = value => {
+    setIsChecked(value);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Toogle isChecked={isChecked} handleChange={handleChange} />
     </div>
   );
-}
+};
 
 export default App;
