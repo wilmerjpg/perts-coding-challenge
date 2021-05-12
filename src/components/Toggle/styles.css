@@ -1,0 +1,46 @@
+.switch {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.switch * {
+  box-sizing: border-box;
+}
+
+.switch > * {
+  margin: 5px;
+}
+
+.switch > p {
+  color: #000000;
+}
+
+.switch .react-switch-bg > * {
+  height: 100% !important;
+}
+
+.switch .switch-checked .react-switch-bg {
+  border: 2px solid #00afee;
+}
+
+.switch .switch-unchecked .react-switch-bg {
+  border: 2px solid #4f4f4f;
+}
+
+.switch .switch-icon-checked,
+.switch .switch-icon-unchecked {
+  display: block;
+  margin: auto;
+  height: 100%;
+  font-size: 16px;
+}
+
+.switch .switch-icon-checked {
+  color: #ffffff;
+}
+
+.switch .switch-icon-unchecked {
+  color: #4f4f4f;
+}
