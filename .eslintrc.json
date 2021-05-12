@@ -2,7 +2,7 @@
     "env": {
         "browser": true,
         "es2021": true,
-        "jests": true,
+        "jest": true
     },
     "extends": [
         "plugin:react/recommended",
@@ -19,7 +19,7 @@
         "react"
     ],
     "rules": {
-        "react/jxs-filename-extension": 0,
+        "react/jsx-filename-extension": 0,
         "arrow-parens": [1, "as-needed"]
     }
 }
