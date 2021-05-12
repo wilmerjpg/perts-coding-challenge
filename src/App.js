@@ -4,6 +4,10 @@ import Toogle from './components/Toggle';
 const App = () => {
   const [isChecked, setIsChecked] = useState(false);
 
+  /**
+   * Function to change toggle value
+   * @param value
+   */
   const handleChange = value => {
     setIsChecked(value);
   };

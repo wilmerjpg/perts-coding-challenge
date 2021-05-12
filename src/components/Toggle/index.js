@@ -4,6 +4,9 @@ import Switch from 'react-switch';
 import { Done, Close } from '@material-ui/icons';
 import './styles.css';
 
+/**
+ * Toogle component to select between manager or member
+ */
 const Toggle = props => {
   const { isChecked, handleChange } = props;
 
